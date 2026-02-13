@@ -18,4 +18,8 @@ const auth = (req,res,next)=>{
             });
         }
 };
+function work(){
+    console.log(1234)
+}
+
 module.exports={auth};
