@@ -12,8 +12,10 @@ const createCategory = async (req,res)=>{
             name
         })
          res.status(200).json({
-            message:"Category created succesfully"
+            message:"Category created succesfully",
+            createCategory
         });
+        
     } catch (error) {
          res.status(500).json({
             message:"Internal server Error"
